@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  mcp-gateway:
+    image: python:3.11-slim
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: uvicorn mcp_gateway_router:app --host 0.0.0.0 --port 8088
+    ports:
+      - "8088:8088"
+    environment:
+      - MCP_PORT=8088
+      - MCP_ENV=production
+    restart: unless-stopped

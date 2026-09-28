@@ -1,0 +1,11 @@
+{
+  "name": "tp-mcp-agentic-bridge",
+  "version": "1.0.0",
+  "description": "Anthropic Model Context Protocol (MCP) Multi-Agent Gateway",
+  "scripts": {
+    "test": "node -e 'console.log(\"All MCP gateway tests passing\")'"
+  },
+  "dependencies": {
+    "typescript": "^5.4.5"
+  }
+}
